@@ -10,4 +10,4 @@ preload.js - содержит код запрашивающий данные с 
 
 npm run-script start-win \
 or\
-open start.bat file\
+open start.bat file
