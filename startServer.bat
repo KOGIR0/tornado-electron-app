@@ -1,0 +1,1 @@
+call python3 server.py

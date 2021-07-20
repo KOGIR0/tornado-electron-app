@@ -7,7 +7,6 @@ serverName = "Tornado server"
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        print("request")
         requestTime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         response = {"Server Start Time": serverStartTime,
                     "Request Time": requestTime,
@@ -22,4 +21,6 @@ def make_app():
 if __name__ == "__main__":
     app = make_app()
     app.listen(8888)
+    print("Server listening on port ")
+    print(8888)
     tornado.ioloop.IOLoop.current().start()
