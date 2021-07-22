@@ -1,1 +1,1 @@
-call python3 server.py
+call python server.py
